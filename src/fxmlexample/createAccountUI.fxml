@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxmlexample.CreateAccountUIController">
+    <children>
+       <ImageView fitHeight="510.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="false">
+         <image>
+            <Image url="@background.png" />
+         </image>
+       </ImageView>
+       <Label layoutX="100.0" layoutY="33.0" text="AlphaCare Create Account">
+          <font>
+            <Font size="26.0" />
+          </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="100.0" text="First name" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+          </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="140.0" text="Last name" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="180.0" text="Username" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="220.0" text="Password" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="260.0" prefHeight="26.0" prefWidth="106.0" text="RePassword" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="300.0" text="Emailaddress" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+       <Label layoutX="59.0" layoutY="340.0" text="birthDate" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="380.0" text="userType" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+     
+      <TextField fx:id="firstNameField" layoutX="230.0" layoutY="100.0"/>
+      <TextField fx:id="lastNameField" layoutX="230.0" layoutY="140.0" />
+      <TextField fx:id="usernameField" layoutX="230.0" layoutY="180.0"  />
+      <PasswordField fx:id="passwordField" layoutX="230.0" layoutY="220.0"/>
+      <PasswordField fx:id="passwordField1" layoutX="230.0" layoutY="260.0"/>
+      <TextField fx:id="emaildField" layoutX="230.0" layoutY="300.0" promptText="test@gmail.com"/>
+      <DatePicker fx:id="birthDate" layoutX="230.0" layoutY="340.0" />
+      <ChoiceBox fx:id="userChoice" layoutX="230.0" layoutY="380.0" prefWidth="100.0" />
+      <Button fx:id="createAccountButton" layoutX="100.0" layoutY="460.0" mnemonicParsing="false" onAction="#handleCreateAccount" prefHeight="22.0" prefWidth="130.0" style="-fx-background-color: grey;" text="Create Account" textFill="WHITE" />
+      <Button fx:id="goBack" layoutX="350.0" layoutY="460.0" mnemonicParsing="false" onAction="#getLoginCntl" prefHeight="22.0" prefWidth="110.0" style="-fx-background-color: grey;" text="Go Back " textFill="WHITE" />
+      <Label fx:id="userStatus" alignment="CENTER" layoutX="100.0" layoutY="420.0" prefHeight="21.0" prefWidth="321.0" textFill="RED">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
